@@ -44,7 +44,7 @@ function App() {
   };
 
   const handleCheckout = () => {
-    if (cart.length === 0) return;
+    if (!cart.length) return;
     setCart([]);
     alert("Terima Kasih!");
   };
